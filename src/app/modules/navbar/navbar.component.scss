@@ -1,0 +1,25 @@
+.snav-container {
+    height: 100%;
+    .sidenav {
+        width: 200px;
+        mat-list-item {
+            padding: 2px 0px;
+        }
+    }
+
+    .mat-toolbar{
+        background: inherit;
+    }
+
+    .mat-toolbar.mat-primary{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .menu-icon {
+        color: rgb(64, 7, 7);
+        font-size: 1.25rem;
+        font-weight: 700;
+    }
+}

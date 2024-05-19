@@ -1,0 +1,17 @@
+<mat-sidenav-container class="snav-container">
+    <mat-sidenav #sNav class="sidenav" fixedInViewport mode="side" opened="true">
+        <mat-nav-list>
+            <mat-list-item routerLink="home"><span>Home</span></mat-list-item>
+            <mat-list-item routerLink="billing"><span>Billing</span></mat-list-item>
+            <mat-list-item routerLink="reports"><span>Reports</span></mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+                <button mat-button class="menu-icon" (click)="sNav.toggle()">Intro Microfrontends Menu</button>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
